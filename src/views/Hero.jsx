@@ -48,7 +48,6 @@ const Hero = () => {
             </div>
 
             <div className="absolute left-0 top-0 w-full h-full z-10 px-8">
-
                 <Nav />
                 <motion.h1 initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ duration: 2, type: "spring", delay: 1.5 }} className='font-zombie 2xl:text-[13rem] md:text-[10rem] sm:text-8xl text-6xl text-center mt-24 2xl:mt-32 text-white text-stroke glow origin-center '>ZOMBIE SUI</motion.h1>
             </div>

@@ -10,7 +10,7 @@ const AnimateRight = (props) => {
     })
 
     return (
-        <motion.div initial={{ x: 150, opacity: 0 }} animate={inView ? { x: 0, opacity: 1 } : {}} transition={{ duration: 2, ease: [0.16, 0.77, 0.47, .97] }} ref={ref}>
+        <motion.div initial={{ opacity: 0 }} animate={inView ? { x: [150, 0], opacity: 1 } : {}} transition={{ duration: 2, ease: [0.16, 0.77, 0.47, .97] }} ref={ref}>
             {props.children}
         </motion.div>
     )

@@ -9,7 +9,6 @@ const About = () => {
             <div className="lg:block hidden">
                 <img src="/webspider.png" alt="WebSpider" className="absolute left-0 top-0" />
                 <img src="/web.png" alt="WebSpider" className="absolute right-0 top-0" />
-
             </div>
 
 

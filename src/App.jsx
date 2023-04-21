@@ -2,6 +2,8 @@ import React from 'react'
 import Hero from './views/Hero'
 import About from './views/About'
 import Ecosystem from './views/Ecosystem'
+import Tokenomics from './views/Tokenomics'
+import Roadmap from './views/Roadmap'
 
 const App = () => {
   return (
@@ -9,6 +11,8 @@ const App = () => {
       <Hero />
       <About />
       <Ecosystem />
+      <Tokenomics />
+      <Roadmap />
     </>
   )
 }
