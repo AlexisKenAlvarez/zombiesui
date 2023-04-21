@@ -82,15 +82,17 @@ const Ecosystem = () => {
                         </Slider>
                     </div>
 
-                    <div className="absolute ld:-left-16 left-0 right-0 -bottom-7 mx-auto w-[7rem] h-10 translate-y-full flex items-center justify-between text-white text-4xl">
+                    <div className="absolute lg:-left-16 left-0 right-0 -bottom-7 mx-auto w-[7rem] h-10 translate-y-full flex items-center justify-between text-white text-4xl">
                         <FaLongArrowAltLeft className='cursor-pointer' onClick={() => sliderRef?.current?.slickPrev()} />
                         <FaLongArrowAltRight className='cursor-pointer' onClick={() => sliderRef?.current?.slickNext()} />
                     </div>
-
                 </div>
 
-                <AnimateRight>
-                    <div className="max-w-[35rem] lg:text-left text-center">
+
+                <div className="max-w-[35rem] lg:text-left text-center">
+                    <AnimateRight>
+
+
                         <h2 className='font-zombie text-5xl'>Game Zombie</h2>
                         <p className="font-poppins mt-4">
                             The game Zombie is a collection of NFT zombies with unique features and abilities. Each zombie has its own backstory, which makes them interesting and collectible. There are five types of NFT zombies available in the game:
@@ -99,8 +101,25 @@ const Ecosystem = () => {
                         <div className="mt-7">
                             {zombieList[current]}
                         </div>
-                    </div>
-                </AnimateRight>
+                    </AnimateRight>
+
+                    <AnimateRight>
+                        <div className="font-poppins mt-7">
+                            <h2 className='font-poppins font-bold'>How to play?</h2>
+
+                            <p className="">
+                                To play the game, users need to purchase NFT zombies from the Suizombie platform. Once they own an NFT zombie, they can raise it and earn profits. The profit mechanism is based on the rarity of the zombie and its level. The higher the rarity and level, the more profits it can generate.
+                            </p>
+
+                            <p className="">
+                                For example, a level one Baby Zombie with common rarity can generate one SZB token per day, while a level five Pirate Zombie with legendary rarity can generate 50 SBZ tokens per day. Users can sell their NFT zombies on the Suizombie platform, or trade them on other NFT marketplaces.
+                            </p>
+
+                        </div>
+                    </AnimateRight>
+
+
+                </div>
 
 
             </div>
