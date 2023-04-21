@@ -11,9 +11,7 @@ const HeroCanvas = () => {
                     <HeroScene />
                 </Suspense>
             </Canvas>
-            <div className="fixed">
-                <Loader />
-            </div>
+            <Loader />
         </>
 
     )
