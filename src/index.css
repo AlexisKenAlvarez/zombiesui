@@ -5,6 +5,11 @@
 @tailwind utilities;
 
 @layer base {
+
+  body, html {
+    scroll-behavior: smooth;
+  }
+
   @font-face {
     font-family: 'zombie';
     src: url('../fonts/zombie.ttf');

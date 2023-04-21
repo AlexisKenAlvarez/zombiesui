@@ -26,7 +26,7 @@ const Hero = () => {
 
 
     return (
-        <section className="w-full h-screen bg-heroBg relative overflow-hidden">
+        <section className="w-full h-screen bg-heroBg relative overflow-hidden" id="home">
 
             <div className="md:block hidden">
                 <motion.img initial={{ y: 150, x: -150 }} animate={animation} src="/bats.webp" alt="bats1" className="absolute left-10 bottom-[10rem] z-10 w-[17rem] scale-x-[-1]" />

@@ -59,7 +59,7 @@ const Roadmap = () => {
     };
 
     return (
-        <div className="w-full h-auto bg-newbg text-white py-20 pb-36 px-10 relative">
+        <div className="w-full h-auto bg-newbg text-white py-20 pb-36 px-10 relative" id="roadmap">
 
             <img src="/roadmapbg.webp" alt="roadmap" className="w-full h-full object-cover absolute bottom-0 left-0" />
 

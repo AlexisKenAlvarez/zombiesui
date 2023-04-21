@@ -134,7 +134,7 @@ const Ecosystem = () => {
     ];
 
     return (
-        <div className="w-full h-auto bg-newbg text-white py-20 px-10 overflow-hidden font-poppins">
+        <div className="w-full h-auto bg-newbg text-white py-20 px-10 overflow-hidden font-poppins" id="ecosystem">
 
             <AnimateScale>
                 <div className="relative flex items-center w-fit mx-auto">

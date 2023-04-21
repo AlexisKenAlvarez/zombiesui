@@ -76,7 +76,7 @@ const Tokenomics = () => {
     }
 
     return (
-        <div className="w-full h-auto bg-newbg text-white py-20 px-10 overflow-hidden relative">
+        <div className="w-full h-auto bg-newbg text-white py-20 px-10 overflow-hidden relative" id="tokenomics">
 
             <div className="lg:block hidden">
                 <img src="/webspider.png" alt="WebSpider" className="absolute left-0 top-0" />

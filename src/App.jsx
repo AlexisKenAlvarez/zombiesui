@@ -4,6 +4,7 @@ import About from './views/About'
 import Ecosystem from './views/Ecosystem'
 import Tokenomics from './views/Tokenomics'
 import Roadmap from './views/Roadmap'
+import Footer from './components/Footer'
 
 const App = () => {
   return (
@@ -13,6 +14,7 @@ const App = () => {
       <Ecosystem />
       <Tokenomics />
       <Roadmap />
+      <Footer />
     </>
   )
 }

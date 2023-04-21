@@ -4,7 +4,7 @@ import AnimateRight from '../components/AnimateRight'
 
 const About = () => {
     return (
-        <section className="w-full h-auto bg-[#181c23] text-white px-10 relative z-0 pt-28">
+        <section className="w-full h-auto bg-[#181c23] text-white px-10 relative z-0 pt-28" id="about">
 
             <div className="lg:block hidden">
                 <img src="/webspider.png" alt="WebSpider" className="absolute left-0 top-0" />

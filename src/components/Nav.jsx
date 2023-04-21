@@ -5,7 +5,7 @@ import { motion } from 'framer-motion'
 
 const Nav = () => {
 
-    const list = ['home', 'launchpad', 'NFTs', 'partners', 'upcoming']
+    const list = ['about', 'ecosystem', 'tokenomics', 'roadmap']
     const [active, setActive] = useState(false)
 
     const setToggle = () => {
