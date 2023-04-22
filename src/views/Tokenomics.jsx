@@ -2,6 +2,7 @@ import React from 'react'
 import AnimateScale from '../components/AnimateScale'
 import { useInView } from 'react-intersection-observer'
 import { motion } from 'framer-motion'
+import Chart from 'react-apexcharts'
 
 const Tokenomics = () => {
 
@@ -75,6 +76,38 @@ const Tokenomics = () => {
         show: { opacity: 1, y: 0, duration: 2 }
     }
 
+    const series = [
+        9, 10, 12, 6, 3, 45, 6, 1, 8
+    ]
+
+    const options = {
+        labels: ['Ecosystem', 'Private Sale', 'IDO', 'Marketing', 'Advisor', 'Reward Pool', 'SuiZombie Team', 'Airdrop', 'Liquidity'],
+        colors: ['#957002', '#4283f3', '#e94234', '#f9bb04', '#34a752', '#ff6c00', '#46bbc5', '#0a48af', '#9b1a10'],
+        theme: {
+            mode: 'dark'
+        },
+        chart: {
+            background: '#181c23    '
+        },
+        responsive: [{
+            breakpoint: 1280,
+            options: {
+                chart: {
+                    width: 580,
+                    height: 580
+                }
+            },
+            breakpoint: 1024,
+            options: {
+                chart: {
+                    width: 370,
+                    height: 370
+                }
+            },
+
+        }]
+    }
+
     return (
         <div className="w-full h-auto bg-newbg text-white py-20 px-10 overflow-hidden relative" id="tokenomics">
 
@@ -91,10 +124,12 @@ const Tokenomics = () => {
             </AnimateScale>
 
             <div className="max-w-[1500px] w-full mx-auto flex items-center justify-center gap-x-20 gap-y-12 mt-20 md:flex-row flex-col ">
-                <div className="w-full flex items-center justify-center">
-                    <motion.img initial={{ opacity: 0, rotate: -180 }} whileInView={{ opacity: 1, x: [-200, 0], rotate: 0 }} transition={{ duration: 1.2 }} src="/tokenomics.webp" alt="Tokenomics" className="w-[28rem]" />
+                <div className="w-fit flex items-center justify-center">
+                    <Chart options={options} series={series} type="donut" width={630} height={630} />
+                    {/* 
+                    <motion.img initial={{ opacity: 0, rotate: -180 }} whileInView={{ opacity: 1, x: [-200, 0], rotate: 0 }} transition={{ duration: 1.2 }} src="/tokenomics.webp" alt="Tokenomics" className="w-[28rem]" /> */}
                 </div>
-                <motion.div variants={container} initial="hidden" animate={inView ? "show" : ""} className="flex flex-col md:w-full font-poppins gap-y-3 w-fit" ref={ref}>
+                {/* <motion.div variants={container} initial="hidden" animate={inView ? "show" : ""} className="flex flex-col md:w-full font-poppins gap-y-3 w-fit" ref={ref}>
                     {list.map((items, i) => {
                         return (
                             <motion.div variants={item} className="flex items-center w-[19rem] gap-x-3" key={i}>
@@ -106,7 +141,7 @@ const Tokenomics = () => {
                             </motion.div>
                         )
                     })}
-                </motion.div>
+                </motion.div> */}
 
 
             </div>
